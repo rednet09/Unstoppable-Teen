@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: Arial;
 }
+
+/* header section starts */
 .header {
   margin: 1.25rem 2.5rem;
 }
@@ -28,3 +30,40 @@ ul li:hover {
   color: #6f4cce;
   cursor: pointer;
 }
+/* header section ends */
+
+/* intro section starts */
+
+#intro {
+  height: 81vh;
+  width: 100%;
+  background-image: url(/Assets/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 4rem;
+  letter-spacing: 3px;
+
+  font-family: "Tahoma";
+}
+
+#intro h1 {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 45px;
+  border-radius: 32px;
+  background-color: #00befb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-style: none;
+}
+/* intro section ends */
