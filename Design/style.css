@@ -10,9 +10,6 @@
   margin: 1.25rem 2.5rem;
 }
 
-.Brand-logo {
-  /*  */
-}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -30,6 +27,57 @@ ul li:hover {
   color: #6f4cce;
   cursor: pointer;
 }
+
+.toggle-button {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    margin: 10px;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .Brand-logo img {
+    width: 150px;
+    height: auto;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-links li {
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
 /* header section ends */
 
 /* intro section starts */
@@ -46,17 +94,19 @@ ul li:hover {
   align-items: center;
   flex-direction: column;
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 2.6rem;
   letter-spacing: 3px;
 
   font-family: "Tahoma";
 }
 
-#intro h1 {
+.intro-heading {
+  max-width: 80%;
   text-align: center;
 }
 
 button {
+  margin-top: 1.3rem;
   width: 200px;
   height: 45px;
   border-radius: 32px;
@@ -66,4 +116,104 @@ button {
   font-weight: bold;
   border-style: none;
 }
+
+@media (max-width: 700px) {
+  #intro {
+    height: 40vh;
+    font-size: 1rem;
+  }
+}
 /* intro section ends */
+
+/*  summary sections starts here */
+#summary {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.inner-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #f7f5fc;
+  margin: 70px;
+}
+
+.middle-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid #f7f5fc;
+  margin: 50px;
+}
+
+.outer-circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 2px solid #f7f5fc;
+}
+
+.content {
+  max-width: 50%;
+}
+
+span {
+  background-color: yellow;
+  font-size: 55px;
+  font-family: "Tahoma";
+}
+.content h2 {
+  font-size: 55px;
+  line-height: 69px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Tahoma";
+  margin-bottom: 10px;
+}
+
+.content button {
+  background-color: #000000;
+}
+
+.image-a {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+
+  z-index: 1;
+}
+
+.image-b {
+  position: absolute;
+  left: 280px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.image-c {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+
+.image-d {
+  position: absolute;
+  bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  #summary {
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .content h2 {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+/* summary sections ends here */
