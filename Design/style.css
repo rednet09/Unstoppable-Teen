@@ -85,7 +85,7 @@ ul li:hover {
 #intro {
   height: 81vh;
   width: 100%;
-  background-image: url(/Assets/hero.jpg);
+  background-image: url(../Assets/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -511,7 +511,7 @@ h2 {
 /* contact section starts here */
 #contact {
   margin-top: 40px;
-  background-image: url(/Assets/contact.png);
+  background-image: url(../Assets/contact.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
