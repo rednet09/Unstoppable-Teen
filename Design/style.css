@@ -166,7 +166,7 @@ span {
   font-size: 55px;
   font-family: "Tahoma";
 }
-.content h2 {
+h2 {
   font-size: 55px;
   line-height: 69px;
   color: #000000;
@@ -190,7 +190,7 @@ span {
 .image-b {
   position: absolute;
   left: 280px;
-  bottom: 0px;
+  bottom: 30px;
   z-index: 1;
 }
 
@@ -202,7 +202,7 @@ span {
 
 .image-d {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
 }
 
 @media (max-width: 700px) {
@@ -211,9 +211,165 @@ span {
 
     width: 100%;
   }
+  .inner-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    margin: 35px;
+  }
+
+  .middle-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    margin: 25px;
+  }
+
+  .outer-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .image-a {
+    width: 150px;
+    left: 50px;
+    top: 20px;
+
+    z-index: 1;
+  }
+
+  .image-b {
+    width: 100px;
+    left: 210px;
+    top: 130px;
+    z-index: 1;
+  }
+
+  .image-c {
+    width: 80px;
+    top: 50px;
+    left: 210px;
+  }
+
+  .image-d {
+    width: 80px;
+    left: 100px;
+    top: 180px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+  .content {
+    max-width: 80%;
+  }
+
   .content h2 {
-    font-size: 10px;
+    font-size: 20px;
     line-height: 20px;
   }
 }
 /* summary sections ends here */
+
+/* features section starts here */
+#features {
+  text-align: center;
+
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+#features h2 {
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.feature-content-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: auto;
+  max-width: 70%;
+}
+
+.feature-content {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  #features h2 {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+}
+
+/* features section ends here */
+
+/* video section starts here */
+#video {
+  position: relative;
+}
+#video img:first-of-type {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+.play-buttton {
+  position: absolute;
+  top: 120px;
+  left: 530px;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .play-buttton {
+    width: 80px;
+
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    z-index: 2;
+  }
+}
+/* video section ends here */
+
+/* podcast section starts here */
+
+#podcast {
+  margin-top: 500px;
+  text-align: center;
+}
+.podcast-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.podcast-container-content p:first-of-type {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* podcast section ends here */
