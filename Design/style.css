@@ -571,6 +571,9 @@ h2 {
   span {
     font-size: 20px;
   }
+  .social-links ul li {
+    margin-top: 20px;
+  }
 }
 /* contact section ends here */
 
