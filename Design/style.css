@@ -463,7 +463,8 @@ h2 {
 }
 .test {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 .test button {
   background-color: #000000;
