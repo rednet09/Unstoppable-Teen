@@ -400,4 +400,60 @@ h2 {
   background-color: #000000;
 }
 
+@media (max-width: 700px) {
+  #podcast {
+    margin-top: 200px;
+  }
+  .podcast-container {
+    flex-direction: column;
+  }
+  span {
+    font-size: 20px;
+  }
+}
+
 /* podcast section ends here */
+
+/* mobile section stats here */
+#mobile {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#mobile img {
+  position: absolute;
+  width: 350px;
+  z-index: 1;
+}
+
+.mobile-content {
+  max-width: 50%;
+}
+.mobile-content h2 {
+  margin-bottom: 20px;
+}
+.mobile-content img {
+  margin-top: 10px;
+  max-width: 100px;
+}
+
+@media (max-width: 700px) {
+  #mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  #mobile img {
+    width: 200px;
+  }
+  .mobile-content {
+    max-width: 80%;
+  }
+  .mobile-content h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+/* mobile section ends here */
