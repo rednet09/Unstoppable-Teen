@@ -507,3 +507,69 @@ h2 {
   }
 }
 /* testimonial section starts here */
+
+/* contact section starts here */
+#contact {
+  margin-top: 40px;
+  background-image: url(/Assets/contact.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container button {
+  background-color: #000000;
+  width: 300px;
+}
+.text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.contact-container h2 {
+  font-size: 40px;
+  margin-top: 80px;
+  color: #ffffff;
+}
+.contact-container span {
+  font-size: 40px;
+  color: #000000;
+}
+
+.social-links ul li {
+  margin-top: 80px;
+  list-style: none;
+}
+
+.social-links ul {
+  display: flex;
+
+  gap: 10px;
+}
+.fa-brands {
+  color: #00befb;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  span {
+    font-size: 10px;
+  }
+}
+/* contact section ends here */
